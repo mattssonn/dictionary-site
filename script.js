@@ -7,9 +7,9 @@ const getData = async () => {
   console.log(data[0].word);
 
   const navbar = document.querySelector(".topnav");
-  const definition = document.createElement("p");
-  const license = document.createElement("p");
   const name = document.createElement("p");
+  const license = document.createElement("p");
+  const definition = document.createElement("p");
   navbar.appendChild(name);
   navbar.appendChild(license);
   navbar.appendChild(definition);
