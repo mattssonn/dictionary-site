@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.topnav {
+  margin-top: 25px;
+}
+input {
+  font-size: 50px;
+  background-color: ;
+  font-weight: 600;
+}
+
+input .search {
+  background-color: white;
+}
+
+button {
+  width: 80px;
+  height: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#p-tag {
+  font-weight: 600;
+  font-size: 25px;
+}
