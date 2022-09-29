@@ -1,6 +1,7 @@
 const container = document.querySelector(".container");
 const submit = document.getElementById("button");
 const input = document.getElementById("input");
+const results = document.querySelector(".results");
 
 async function getData() {
   const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${input.value}`;
@@ -11,11 +12,11 @@ async function getData() {
   const license = document.createElement("p");
   const definition = document.createElement("p");
 
-  container.appendChild(name);
-  container.appendChild(license);
-  container.appendChild(definition);
+  results.appendChild(name);
+  results.appendChild(definition);
+  results.appendChild(license);
   name.innerText = `Word: ${data[0].word}`;
+  definition.innerText = `Definition: ${data[0].meanings[0].definitions[0].definition}`;
   license.innerText = `License name: ${data[0].license.name}`;
-  definition.innerText = `Definition: ${data[0].meanings[0].definitions[1].definition}`;
 }
 submit.addEventListener("click", getData);

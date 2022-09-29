@@ -2,26 +2,84 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: white;
-}
-.container {
-  margin-top: 25px;
-}
-input {
-  font-size: 50px;
-  font-weight: 600;
+  background-color: #10151b;
 }
 
-button {
+.container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#heading {
+  font-size: 50px;
+  text-decoration: underline;
+  color: white;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.searchbar {
+  background-color: #1b2936;
+  border-radius: 10px;
+  border: 2px solid;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  font-size: 50px;
+  font-weight: 300;
+  color: white;
+  background-color: #1b2936;
+  font-family: "Noto Sans Mono", monospace;
+  border-radius: 10px;
+  border-color: black;
+  padding: 10px;
+  width: 100%;
+}
+
+.results {
+  width: 100%;
+  background-color: #1b2936;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid;
+  padding: 10px;
+}
+
+#button {
   width: 80px;
   height: 40px;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  background-color: #10151b;
 }
 
 p {
   font-size: 20px;
+  font-family: "Noto Sans Mono", monospace;
 }
 
-#p-tag {
+#description {
   font-weight: 600;
   font-size: 25px;
 }
+
+@media only screen and (max-width: 1350px) {
+  .searchbar {
+    flex-wrap: wrap;
+  }
+}
+
+/* @media only screen and (max-width: 1220px) {
+  input {
+    width: 100%;
+  }
+} */
