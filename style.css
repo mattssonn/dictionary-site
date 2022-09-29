@@ -13,7 +13,7 @@ body {
 }
 
 #heading {
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: underline;
   color: white;
   font-family: "Noto Sans Mono", monospace;
@@ -22,7 +22,7 @@ body {
 .searchbar {
   background-color: #1b2936;
   border-radius: 10px;
-  border: 2px solid;
+  border: 1px solid;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -32,7 +32,7 @@ body {
 }
 
 input {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
   color: white;
   background-color: #1b2936;
@@ -48,7 +48,7 @@ input {
   background-color: #1b2936;
   margin-top: 20px;
   border-radius: 10px;
-  border: 2px solid;
+  border: 1px solid;
   padding: 10px;
 }
 
@@ -69,7 +69,15 @@ p {
 
 #description {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
+}
+#clear {
+  background-color: #10151b;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1350px) {
